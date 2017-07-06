@@ -1,0 +1,5 @@
+# 基于spring mvc 无xml配置（除了log4j2的）
+自定义RequestMappingHandlerMapping，通过自定义注解（差不多理解成自定义@RequestMapping吧）
+实现接口注册
+1、通过继承WebMvcConfigurationSupport（此时不需要在此启用@EnableWebMvc）
+2、也可以通过反射调用RequestMappingHandlerMapping及其父类的方法来进行接口注册
